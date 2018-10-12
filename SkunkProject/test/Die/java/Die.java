@@ -26,11 +26,6 @@ public class Die {
 		return "Die: " + this.getLastRoll();
 	}
 
-	public Object[] sides() {
-		// TODO Auto-generated method stub
-		return null;
-	
-	}
 
 	public void lastRoll(int lastRoll2) {
 		// TODO Auto-generated method stub

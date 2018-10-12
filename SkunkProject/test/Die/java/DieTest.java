@@ -6,14 +6,15 @@ import org.junit.Test;
 import edu.princeton.cs.introcs.*;
 	public class DieTest
 	{
-		
+		/**
+		 * Test of setLastRoll method, of class Die.
+		 */
 		@Test
 		public void testSetLastRoll() {
 		    System.out.println("setLastRoll");
 		    int lastRoll = 100;
 		    Die instance = new Die();
 		    instance.lastRoll(lastRoll);
-		    // TODO review the generated test code and remove the default call to fail.
 		    assertEquals(instance.getLastRoll(), lastRoll);
 		}
 
