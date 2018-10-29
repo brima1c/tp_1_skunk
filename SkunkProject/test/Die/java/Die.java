@@ -4,7 +4,7 @@ public class Die {
 	 
 	private int lastRoll;
 
-	public Die()
+	public Die(int[] init_values)
 	{
 		this.roll();
 	}
@@ -27,8 +27,8 @@ public class Die {
 	}
 
 
-	public void lastRoll(int lastRoll2) {
-		// TODO Auto-generated method stub
+	public void lastRoll(int lastRoll) {
+		
 		
 	}
 
