@@ -26,7 +26,7 @@ public boolean isSingleSkunk()
 	if (isDoubleSkunk()|| isSingleSkunk())
 		return false;
 	else
-		return this.dice.getDie1.getLastRoll() == 1 || this.dice.getDie2.getLastRoll() == 1;
+		return ((Dice) this.dice.getDie1).getLastRoll() == 1 || ((Dice) this.dice.getDie2).getLastRoll() == 1;
 }
 public boolean isDeuceSkunk()
 {

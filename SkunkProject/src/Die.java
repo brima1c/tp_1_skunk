@@ -1,5 +1,5 @@
 
-public class Die
+public class Die 
 {
 	private int lastRoll;
 

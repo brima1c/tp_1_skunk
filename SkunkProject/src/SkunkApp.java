@@ -5,7 +5,7 @@ public class SkunkApp {
 	{
 		StdOut.println("Welcom to SEIS 635 SKUNL PROJECT");
 		StdOut.println("Play one turn for player 1");
-		String player = 'player1;
+		String player = player;
 		Turn turn = new Turn();
 		
 		StdOut.println("do you want to roll n or y ( enter = y");
@@ -19,6 +19,16 @@ public class SkunkApp {
 		int turn score = turn.getTurnScore();
 		StdOut.println("Your scored" + turnScore + 'for this turn');
 		}
+		
+	}
+
+	private static void scoreAgain() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void rollAgain() {
+		// TODO Auto-generated method stub
 		
 	}
 
