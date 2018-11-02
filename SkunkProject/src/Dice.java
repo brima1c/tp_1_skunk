@@ -10,7 +10,7 @@ import edu.princeton.cs.introcs.StdOut;
  *
  */
  
-// test
+
 public class Dice
 {
 	// Instance fields (variables) may be declared anywhere in class body
