@@ -1,3 +1,4 @@
+// change Dice.java
 import edu.princeton.cs.introcs.StdOut;
 
 /**
