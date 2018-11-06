@@ -18,11 +18,39 @@ public int getTurnScore() {
 	
 return this.turnScore;
 }
-public boolean getLastRoll() {
+public Roll getLastRoll() {
+	
 	return this.getLastRoll();
 	
-//}
-//public void scoreTurn() {
-	//if (this.getLastRoll());
+}
+public void rollAgain() {
+	this.lastRoll = new Roll();
+	rollSequence.add(this.lastRoll);
+	
+}
+
+public void scoreTurn() {
+	
+	if (this.getLastRoll().isDoubleSkunk())
+	{
+		turnScore = 0;	
+	}
+	else if (this.getLastRoll().isDeuceSkunk())
+	{
+		turnScore = 0;	
+	}
+	else if (this.getLastRoll().isDoubleSkunk())
+	{
+		turnScore = 0;	
+	}
+	else
+	{
+		turnScore += lastRoll.getDice().getLastRoll();
+	}
+
+	
 }
 }
+
+	
+
