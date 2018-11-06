@@ -7,7 +7,7 @@ import edu.princeton.cs.introcs.StdOut;
  * 
  * This is a Javadoc comment: add more to your finished class below
  * 
- * @author eric
+ * @authors Brima  and Sharifah
  *
  */
  
