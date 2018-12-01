@@ -13,7 +13,8 @@ public class SkunkApp implements Broadcast {
 			StdOut.println("Play one turn for player " + (i+1));
 			Turn turn = new Turn();		
 			playTurn(turn, array[i]);
-		}		
+		}	
+		
 	}
 
 	

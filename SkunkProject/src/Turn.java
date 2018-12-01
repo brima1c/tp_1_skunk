@@ -6,6 +6,7 @@ public class Turn {
 	private ArrayList<Roll> rollSequence;
 	private Turn turn;
 	private String penalty;
+	
 
 	public Turn() {
 		this.turnScore = 0;
