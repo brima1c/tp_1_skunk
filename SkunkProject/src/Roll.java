@@ -6,7 +6,6 @@ public class Roll {
 	public Roll() {
 		this.dice = new Dice();
 		this.dice.roll();
-
 	}
 
 	public Dice getDice() {
@@ -20,11 +19,12 @@ public class Roll {
 
 	}
 
+	
 	public boolean isSingleSkunk() {
-		if (isDoubleSkunk() || isSingleSkunk())
+		if (isDoubleSkunk())
 			return false;
 		else
-			return ((Dice) this.dice.getDie1).getLastRoll() == 1 || ((Dice) this.dice.getDie2).getLastRoll() == 1;
+			return this.dice.getDie1().getLastRoll() == 1 || this.dice.getDie2().getLastRoll() == 1;
 	}
 
 	public boolean isDeuceSkunk() {
@@ -36,4 +36,11 @@ public class Roll {
 		return (this.dice.getDie1().getLastRoll() == 1 && dice.getDie2().getLastRoll() == 1);
 
 	}
+	public int getDie1Value() {
+		return this.dice.getDie1().getLastRoll();
+	}
+	public int getDie2Value() {
+		return this.dice.getDie2().getLastRoll();
+	}
+	
 }

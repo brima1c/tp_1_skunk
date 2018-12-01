@@ -6,6 +6,7 @@ public class Die {
 		this.roll();
 	}
 
+	
 	public int getLastRoll() // getter or accessor method
 	{
 

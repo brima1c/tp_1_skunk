@@ -20,8 +20,6 @@ public class Dice
 	private int lastRoll;
 	private Die die1;
 	private Die die2;
-	public Object getDie1;
-	public Object getDie2;
 
 	// Constructors (object initializers) also can be declared anywhere
 	// Convention: after instance fields/variables
@@ -91,6 +89,7 @@ public class Dice
 				doubleSkunkCount++;
 		}
 
+		
 		StdOut.println("Actual count: " + doubleSkunkCount);
 		StdOut.println("Expected count: " + (NUM_TRIALS / 36.0));
 	}
@@ -105,13 +104,13 @@ public class Dice
 		
 	}
 
-	public Dice getDie1() {
+	public Die getDie1() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.die1;
 	}
 
-	public Dice getDie2() {
+	public Die getDie2() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.die2;
 	}
 }
