@@ -1,4 +1,4 @@
-import javax.xml.ws.Response;
+package SkunkAppPackage;
 
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
@@ -13,8 +13,7 @@ public class SkunkApp implements Broadcast {
 			StdOut.println("Play one turn for player " + (i+1));
 			Turn turn = new Turn();		
 			playTurn(turn, array[i]);
-		}	
-		
+		}		
 	}
 
 	
@@ -36,6 +35,7 @@ public class SkunkApp implements Broadcast {
 			if(turnScore == 0) { 
 				StdOut.println("Penalty:: " + turn.getPenalty());
 				StdOut.println(player + ", You lost all turn points");	
+				StdOut.println(turn.toString());	
 				StdOut.println(player + ", Your accumulated score is now " + turnScore + " for this turn");	
 				StdOut.println(player + " You loose a turn !");
 				StdOut.println(player + " Die 1 was : " + turn.getDie1Value());
@@ -43,6 +43,7 @@ public class SkunkApp implements Broadcast {
 				break;
 			}
 			else {
+				StdOut.println(turn.toString());	
 				StdOut.println(player + ", Your accumulated score is " + turnScore + " for this turn");	
 			}
 		}
@@ -50,8 +51,6 @@ public class SkunkApp implements Broadcast {
 
 	@Override
 	public void showMessage(String msg) {
-
 		StdOut.println(msg);
-
 	}
 }

@@ -1,4 +1,4 @@
-import java.util.Random;
+package SkunkAppPackage;
 
 public class Roll {
 	private Dice dice;
@@ -7,18 +7,16 @@ public class Roll {
 		this.dice = new Dice();
 		this.dice.roll();
 	}
+ 
 
 	public Dice getDice() {
 		return this.dice;
 	}
-
-	public void setDice(Die die1, Die die2) {
-		this.dice.setDie1(die1);
-		this.dice.setDie2(die2);
-		this.dice.roll();
-
+	
+	//for testing with predictable dice
+	public void setDice(PredictableDie pDie, PredictableDie pDie2) {
+		this.dice = new Dice(pDie, pDie2);
 	}
-
 	
 	public boolean isSingleSkunk() {
 		if (isDoubleSkunk())
@@ -42,5 +40,5 @@ public class Roll {
 	public int getDie2Value() {
 		return this.dice.getDie2().getLastRoll();
 	}
-	
+
 }

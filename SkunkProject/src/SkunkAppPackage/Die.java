@@ -1,3 +1,4 @@
+package SkunkAppPackage;
 
 public class Die {
 	private int lastRoll;
@@ -5,11 +6,9 @@ public class Die {
 	public Die() {
 		this.roll();
 	}
-
 	
 	public int getLastRoll() // getter or accessor method
 	{
-
 		return this.lastRoll;
 	}
 

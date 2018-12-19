@@ -1,10 +1,10 @@
+package SkunkAppPackage;
 import java.util.ArrayList;
 
 public class Turn {
 	private int turnScore;
 	private Roll lastRoll;
 	private ArrayList<Roll> rollSequence;
-	private Turn turn;
 	private String penalty;
 	
 
@@ -53,5 +53,9 @@ public class Turn {
 	}
 	public String getPenalty() {
 		return this.penalty;
+	}
+	@Override
+	public String toString() {
+		return "ROLL DETAILS: Die 1 => " +this.getDie1Value() + " and Die 2 => " + this.getDie2Value(); 
 	}
 }
